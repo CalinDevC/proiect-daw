@@ -24,7 +24,7 @@ Fiecare fișier/director va conține următoarele:
 4.	products.php — Acest fișier va fi pentru afișarea tuturor produselor.
 5.	product.php — Acest fișier va afișa un produs (depinde de solicitarea GET) și va conține un formular care va permite clientului să schimbe cantitatea și să adauge în coș produsul.
 6.	cart.php — Pagina cosului de cumparaturi care va popula toate produsele care au fost adaugate in cos, impreuna cu cantitatile, preturile totale si pretul subtotal.
-7.	placeorder.php — Un mesaj de bază care va fi afișat utilizatorului atunci când plasează o comandă.
+7.	placeorder.php — Un mesaj care va fi afișat utilizatorului atunci când plasează o comandă.
 8.	style.css — style sheet (CSS3) pe care o voi folosi pentru magazinul online
 9.	IMGS - Director care va conține toate imaginile pentru magazinul online (imagini recomandate, imagini de produs, etc). 
 
