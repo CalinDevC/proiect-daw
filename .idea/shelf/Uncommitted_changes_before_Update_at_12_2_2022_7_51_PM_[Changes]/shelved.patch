@@ -1,0 +1,19 @@
+Index: structura.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>Structura aplicatiei web\r\n\r\nStructura fisiere\r\n\\-- shoppingcart\r\n|-- functions.php\r\n|-- index.php\r\n|-- home.php\r\n|-- products.php\r\n|-- product.php\r\n|-- cart.php\r\n|-- placeorder.php\r\n|-- style.css\r\n\\-- imgs\r\n|-- acac.jpg\r\n|-- dada.jpg\r\n|-- xzxzx.jpg\r\n|-- dfdff.jpg\r\n|-- rtrr.jpg\r\n\r\nFiecare fișier/director va conține următoarele:\r\n1.\tfunctions.php — Acest fișier va conține toate funcțiile de care avem nevoie pentru sistemul shopping cart (header, footer și funcțiile de conectare a bazei de date). Probabil tot aici voi implementa sistemul de login sau voi crea un nou users.php si admin.php si cusomers.php. vad cum ma duce proiectul, cat de complex va fi.\r\n2.\tindex.php - Acest fișier va conține teamplate pentru pagina principala și rutarea de bază, astfel încât să putem include paginile de mai jos.\r\n3.\thome.php - Acest fișier va fi pagina de pornire care va conține o imagine prezentată și 4 produse adăugate recent.\r\n4.\tproducts.php — Acest fișier va fi pentru afișarea tuturor produselor.\r\n5.\tproduct.php — Acest fișier va afișa un produs (depinde de solicitarea GET) și va conține un formular care va permite clientului să schimbe cantitatea și să adauge în coș produsul.\r\n6.\tcart.php — Pagina cosului de cumparaturi care va popula toate produsele care au fost adaugate in cos, impreuna cu cantitatile, preturile totale si pretul subtotal.\r\n7.\tplaceorder.php — Un mesaj de bază care va fi afișat utilizatorului atunci când plasează o comandă.\r\n8.\tstyle.css — style sheet (CSS3) pe care o voi folosi pentru magazinul online\r\n9.\tIMGS - Director care va conține toate imaginile pentru magazinul online (imagini recomandate, imagini de produs, etc). \r\n\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/structura.txt b/structura.txt
+--- a/structura.txt	(revision 20fda712d928c9776d833b970edf7f8231ffad5a)
++++ b/structura.txt	(date 1670001367620)
+@@ -24,7 +24,7 @@
+ 4.	products.php — Acest fișier va fi pentru afișarea tuturor produselor.
+ 5.	product.php — Acest fișier va afișa un produs (depinde de solicitarea GET) și va conține un formular care va permite clientului să schimbe cantitatea și să adauge în coș produsul.
+ 6.	cart.php — Pagina cosului de cumparaturi care va popula toate produsele care au fost adaugate in cos, impreuna cu cantitatile, preturile totale si pretul subtotal.
+-7.	placeorder.php — Un mesaj de bază care va fi afișat utilizatorului atunci când plasează o comandă.
++7.	placeorder.php — Un mesaj care va fi afișat utilizatorului atunci când plasează o comandă.
+ 8.	style.css — style sheet (CSS3) pe care o voi folosi pentru magazinul online
+ 9.	IMGS - Director care va conține toate imaginile pentru magazinul online (imagini recomandate, imagini de produs, etc). 
+ 

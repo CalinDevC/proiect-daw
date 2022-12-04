@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e46c991d-2905-44be-a884-c2c85adfc1a0" name="Changes" comment="am utilizat o metoda simpla pentru a verifica daca variabila $_GET['page'] este o cerere valida. DAca nu, pagina ne redirectaza la homepage.">
+      <change afterPath="$PROJECT_DIR$/shoppingcart/home.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Calin &lt;campean.calin@gmail.com&gt;" />
+      </list>
+    </option>
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2IM1rGvPXgBEChAFQhmRos2UfBS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ToolWindowPull Requests.ShowToolbar": "false",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/xampp/htdocs/proiectDaw",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "web-ide.project.structure",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mariadb"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\proiect-daw" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e46c991d-2905-44be-a884-c2c85adfc1a0" name="Changes" comment="" />
+      <created>1669976835162</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669976835162</updated>
+      <workItem from="1669976836826" duration="17105000" />
+      <workItem from="1670074359772" duration="2268000" />
+      <workItem from="1670084134307" duration="1306000" />
+      <workItem from="1670160797517" duration="484000" />
+    </task>
+    <task id="LOCAL-00001" summary=" files that i will work on">
+      <created>1669986472898</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669986472898</updated>
+    </task>
+    <task id="LOCAL-00002" summary="stabilit conexiunea cu DB magazin_daw">
+      <created>1670008410006</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670008410006</updated>
+    </task>
+    <task id="LOCAL-00003" summary="amcreat functia session start. cu aceasta se va putea inregistra fiecare produs adaugat in cos, conectantu-ne si la DB cu functia creata anterior in functions.php">
+      <created>1670009412979</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670009412979</updated>
+    </task>
+    <task id="LOCAL-00004" summary="incarcat foto">
+      <created>1670074395482</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670074395482</updated>
+    </task>
+    <task id="LOCAL-00005" summary="am utilizat o metoda simpla pentru a verifica daca variabila $_GET['page'] este o cerere valida. DAca nu, pagina ne redirectaza la homepage.">
+      <created>1670083874500</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670083874500</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="i created the empty files that i will work on" />
+    <MESSAGE value=" files that i will work on" />
+    <MESSAGE value="stabilit conexiunea cu DB magazin_daw" />
+    <MESSAGE value="amcreat functia session start. cu aceasta se va putea inregistra fiecare produs adaugat in cos, conectantu-ne si la DB cu functia creata anterior in functions.php" />
+    <MESSAGE value="incarcat foto" />
+    <MESSAGE value="am utilizat o metoda simpla pentru a verifica daca variabila $_GET['page'] este o cerere valida. DAca nu, pagina ne redirectaza la homepage." />
+    <option name="LAST_COMMIT_MESSAGE" value="am utilizat o metoda simpla pentru a verifica daca variabila $_GET['page'] este o cerere valida. DAca nu, pagina ne redirectaza la homepage." />
+  </component>
+</project>
