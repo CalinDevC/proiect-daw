@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e46c991d-2905-44be-a884-c2c85adfc1a0" name="Changes" comment="am utilizat o metoda simpla pentru a verifica daca variabila $_GET['page'] este o cerere valida. DAca nu, pagina ne redirectaza la homepage.">
+    <list default="true" id="e46c991d-2905-44be-a884-c2c85adfc1a0" name="Changes" comment="conectarea la DB din phpStorm">
       <change afterPath="$PROJECT_DIR$/shoppingcart/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +81,7 @@
       <workItem from="1669976836826" duration="17105000" />
       <workItem from="1670074359772" duration="2268000" />
       <workItem from="1670084134307" duration="1306000" />
-      <workItem from="1670160797517" duration="484000" />
+      <workItem from="1670160797517" duration="1852000" />
     </task>
     <task id="LOCAL-00001" summary=" files that i will work on">
       <created>1669986472898</created>
@@ -117,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670083874500</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="conectarea la DB din phpStorm">
+      <created>1670161397052</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1670161397052</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,6 +161,7 @@
     <MESSAGE value="amcreat functia session start. cu aceasta se va putea inregistra fiecare produs adaugat in cos, conectantu-ne si la DB cu functia creata anterior in functions.php" />
     <MESSAGE value="incarcat foto" />
     <MESSAGE value="am utilizat o metoda simpla pentru a verifica daca variabila $_GET['page'] este o cerere valida. DAca nu, pagina ne redirectaza la homepage." />
-    <option name="LAST_COMMIT_MESSAGE" value="am utilizat o metoda simpla pentru a verifica daca variabila $_GET['page'] este o cerere valida. DAca nu, pagina ne redirectaza la homepage." />
+    <MESSAGE value="conectarea la DB din phpStorm" />
+    <option name="LAST_COMMIT_MESSAGE" value="conectarea la DB din phpStorm" />
   </component>
 </project>
