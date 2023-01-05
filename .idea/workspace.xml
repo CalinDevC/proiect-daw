@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e46c991d-2905-44be-a884-c2c85adfc1a0" name="Changes" comment="conectarea la DB din phpStorm">
-      <change afterPath="$PROJECT_DIR$/shoppingcart/home.php" afterDir="false" />
+    <list default="true" id="e46c991d-2905-44be-a884-c2c85adfc1a0" name="Changes" comment="the submited code  will execute a SQL query that will retrieve the four most recently added products from our database.">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/22f3ad09-a936-43cb-9bf4-8a6e25ce3509.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/22f3ad09-a936-43cb-9bf4-8a6e25ce3509.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_2_2022_7_51_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_2_2022_7_51_PM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_2_2022_9_30_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_2_2022_9_30_PM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,27 +48,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "ToolWindowPull Requests.ShowToolbar": "false",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/xampp/htdocs/proiectDaw",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "web-ide.project.structure",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;ToolWindowPull Requests.ShowToolbar&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/proiectDaw&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;web-ide.project.structure&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mariadb"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mariadb&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\proiect-daw" />
@@ -81,7 +85,8 @@
       <workItem from="1669976836826" duration="17105000" />
       <workItem from="1670074359772" duration="2268000" />
       <workItem from="1670084134307" duration="1306000" />
-      <workItem from="1670160797517" duration="1852000" />
+      <workItem from="1670160797517" duration="3466000" />
+      <workItem from="1672927338098" duration="1123000" />
     </task>
     <task id="LOCAL-00001" summary=" files that i will work on">
       <created>1669986472898</created>
@@ -125,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670161397052</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="the submited code  will execute a SQL query that will retrieve the four most recently added products from our database.">
+      <created>1670175431171</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1670175431171</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +174,7 @@
     <MESSAGE value="incarcat foto" />
     <MESSAGE value="am utilizat o metoda simpla pentru a verifica daca variabila $_GET['page'] este o cerere valida. DAca nu, pagina ne redirectaza la homepage." />
     <MESSAGE value="conectarea la DB din phpStorm" />
-    <option name="LAST_COMMIT_MESSAGE" value="conectarea la DB din phpStorm" />
+    <MESSAGE value="the submited code  will execute a SQL query that will retrieve the four most recently added products from our database." />
+    <option name="LAST_COMMIT_MESSAGE" value="the submited code  will execute a SQL query that will retrieve the four most recently added products from our database." />
   </component>
 </project>
