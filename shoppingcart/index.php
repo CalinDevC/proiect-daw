@@ -5,8 +5,8 @@ include 'functions.php';
 $pdo = pdo_connect_mysql();
 
 // Page is set to home (home.php) by default, so when the visitor visits that will be the page they see.
+// i used a ternary operator to instantiate the logic for this
 $page = isset($_GET['page']) && file_exists($_GET['page'] . '.php') ? $_GET['page'] : 'home';
 
 // Include and show the requested page
 include $page . '.php';
-?>
