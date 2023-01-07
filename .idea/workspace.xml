@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e46c991d-2905-44be-a884-c2c85adfc1a0" name="Changes" comment="made it work dracul  knows">
-      <change afterPath="$PROJECT_DIR$/imgs/camera.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgs/featured.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgs/headphones.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgs/wallet.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgs/watch.jpg" afterDir="false" />
+    <list default="true" id="e46c991d-2905-44be-a884-c2c85adfc1a0" name="Changes" comment="update functions php and images">
+      <change afterPath="$PROJECT_DIR$/shoppingcart/imgs/apple-iphone.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoppingcart/imgs/camera.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoppingcart/imgs/featured-image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoppingcart/imgs/featured.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoppingcart/imgs/headphones.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoppingcart/imgs/wallet.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoppingcart/imgs/watch.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/featured-image.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/imgs/featured-image.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingcart/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingcart/functions.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +43,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -54,30 +55,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "ToolWindowPull Requests.ShowToolbar": "false",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/xampp/php/php.ini",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.webide.settings.project.settings.php",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;ToolWindowPull Requests.ShowToolbar&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/php/php.ini&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.webide.settings.project.settings.php&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mariadb",
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mariadb&quot;,
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\proiect-daw" />
@@ -103,7 +104,8 @@
       <workItem from="1673020543691" duration="1382000" />
       <workItem from="1673022072708" duration="1781000" />
       <workItem from="1673095400011" duration="870000" />
-      <workItem from="1673096289228" duration="4275000" />
+      <workItem from="1673096289228" duration="4701000" />
+      <workItem from="1673102267510" duration="1746000" />
     </task>
     <task id="LOCAL-00001" summary=" files that i will work on">
       <created>1669986472898</created>
@@ -168,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673023287559</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="update functions php and images">
+      <created>1673101935650</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1673101935650</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,7 +218,8 @@
     <MESSAGE value="the submited code  will execute a SQL query that will retrieve the four most recently added products from our database." />
     <MESSAGE value="introduced template header and footer (html) in functions.php" />
     <MESSAGE value="made it work dracul  knows" />
-    <option name="LAST_COMMIT_MESSAGE" value="made it work dracul  knows" />
+    <MESSAGE value="update functions php and images" />
+    <option name="LAST_COMMIT_MESSAGE" value="update functions php and images" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
