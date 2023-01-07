@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e46c991d-2905-44be-a884-c2c85adfc1a0" name="Changes" comment="update functions php and images">
-      <change afterPath="$PROJECT_DIR$/shoppingcart/imgs/apple-iphone.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppingcart/imgs/camera.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppingcart/imgs/featured-image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppingcart/imgs/featured.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppingcart/imgs/headphones.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppingcart/imgs/wallet.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppingcart/imgs/watch.jpg" afterDir="false" />
+    <list default="true" id="e46c991d-2905-44be-a884-c2c85adfc1a0" name="Changes" comment="moved images">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingcart/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingcart/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,6 +100,7 @@
       <workItem from="1673095400011" duration="870000" />
       <workItem from="1673096289228" duration="4701000" />
       <workItem from="1673102267510" duration="1746000" />
+      <workItem from="1673104027638" duration="291000" />
     </task>
     <task id="LOCAL-00001" summary=" files that i will work on">
       <created>1669986472898</created>
@@ -177,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673101935650</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="moved images">
+      <created>1673104083409</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1673104083409</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,7 +221,8 @@
     <MESSAGE value="introduced template header and footer (html) in functions.php" />
     <MESSAGE value="made it work dracul  knows" />
     <MESSAGE value="update functions php and images" />
-    <option name="LAST_COMMIT_MESSAGE" value="update functions php and images" />
+    <MESSAGE value="moved images" />
+    <option name="LAST_COMMIT_MESSAGE" value="moved images" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
