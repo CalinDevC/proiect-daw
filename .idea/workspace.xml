@@ -4,21 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e46c991d-2905-44be-a884-c2c85adfc1a0" name="Changes" comment="the submited code  will execute a SQL query that will retrieve the four most recently added products from our database.">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/22f3ad09-a936-43cb-9bf4-8a6e25ce3509.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/22f3ad09-a936-43cb-9bf4-8a6e25ce3509.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_2_2022_7_51_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_2_2022_7_51_PM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_2_2022_9_30_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_2_2022_9_30_PM__Changes_.xml" beforeDir="false" />
+    <list default="true" id="e46c991d-2905-44be-a884-c2c85adfc1a0" name="Changes" comment="made it work dracul  knows">
+      <change afterPath="$PROJECT_DIR$/imgs/camera.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/featured.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/headphones.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/wallet.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/watch.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgs/featured-image.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/imgs/featured-image.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingcart/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingcart/functions.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
-    <execution />
+  <component name="ComposerSettings" synchronizationState="DONT_SYNCHRONIZE">
+    <execution>
+      <executable path="composer" />
+    </execution>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -43,32 +47,37 @@
     <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2IM1rGvPXgBEChAFQhmRos2UfBS" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;ToolWindowPull Requests.ShowToolbar&quot;: &quot;false&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/proiectDaw&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;web-ide.project.structure&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ToolWindowPull Requests.ShowToolbar": "false",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/xampp/php/php.ini",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.webide.settings.project.settings.php",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mariadb&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mariadb",
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\proiect-daw" />
@@ -86,7 +95,15 @@
       <workItem from="1670074359772" duration="2268000" />
       <workItem from="1670084134307" duration="1306000" />
       <workItem from="1670160797517" duration="3466000" />
-      <workItem from="1672927338098" duration="1123000" />
+      <workItem from="1672927338098" duration="1616000" />
+      <workItem from="1672931053817" duration="7243000" />
+      <workItem from="1672958472448" duration="1666000" />
+      <workItem from="1673000391657" duration="4898000" />
+      <workItem from="1673017759697" duration="2073000" />
+      <workItem from="1673020543691" duration="1382000" />
+      <workItem from="1673022072708" duration="1781000" />
+      <workItem from="1673095400011" duration="870000" />
+      <workItem from="1673096289228" duration="4275000" />
     </task>
     <task id="LOCAL-00001" summary=" files that i will work on">
       <created>1669986472898</created>
@@ -137,7 +154,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670175431171</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="introduced template header and footer (html) in functions.php">
+      <created>1672930850608</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1672930850608</updated>
+    </task>
+    <task id="LOCAL-00009" summary="made it work dracul  knows">
+      <created>1673023287559</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1673023287559</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +198,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="i created the empty files that i will work on" />
     <MESSAGE value=" files that i will work on" />
     <MESSAGE value="stabilit conexiunea cu DB magazin_daw" />
@@ -175,6 +207,12 @@
     <MESSAGE value="am utilizat o metoda simpla pentru a verifica daca variabila $_GET['page'] este o cerere valida. DAca nu, pagina ne redirectaza la homepage." />
     <MESSAGE value="conectarea la DB din phpStorm" />
     <MESSAGE value="the submited code  will execute a SQL query that will retrieve the four most recently added products from our database." />
-    <option name="LAST_COMMIT_MESSAGE" value="the submited code  will execute a SQL query that will retrieve the four most recently added products from our database." />
+    <MESSAGE value="introduced template header and footer (html) in functions.php" />
+    <MESSAGE value="made it work dracul  knows" />
+    <option name="LAST_COMMIT_MESSAGE" value="made it work dracul  knows" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
