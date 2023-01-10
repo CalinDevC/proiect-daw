@@ -1,5 +1,5 @@
 <?php
-function pdo_connect_mysql() {
+/*function pdo_connect_mysql() {
     //  MySQL details
     $DATABASE_HOST = 'localhost';
     $DATABASE_USER = 'root';
@@ -11,7 +11,7 @@ function pdo_connect_mysql() {
         // If there is an error with the connection, stop the script and display the error.
         exit($exception->getMessage());
     }
-}
+}*/
 
 // Template header
 function template_header($title) {
