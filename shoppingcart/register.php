@@ -22,31 +22,14 @@ if(isset($_POST['username'], $_POST['email'], $_POST['password'], $_POST['role']
     $stmt->execute([$username, $email, $password, $role]);
     header("Location: index.php");
 }
-
-if(isset($_POST['email'], $_POST['password'])){
-    //handling login form
-    $email = $_POST['email'];
-    $password = $_POST['password'];
-
-
-$stmt = $conn->prepare("SELECT * FROM users WHERE email = ?");
-$stmt->execute([$email]);
-$user = $stmt->fetch();
-
-if ($user && password_verify($password, $user['password'])) {
-    // Login success
-    $_SESSION['user_id'] = $user['id'];
-    $_SESSION['user_role'] = $user['role'];
-    header("Location: index.php");
-} else {
-    // Login failed
-}
-}
 ?>
 
-<!-- Registration Form -->
 
-<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+<!-- Registration Form. as i read on the course material,
+ the htmlspecialchars() function converts special characters to HTML entities,
+ avoiding JavaScript code exploits-->
+
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
     <label for="username">Username:</label>
     <input type="text" id="username" name="username">
 
@@ -57,20 +40,11 @@ if ($user && password_verify($password, $user['password'])) {
     <input type="password" id="password" name="password">
 
     <label for="role">Role:</label>
-    <select id="role" name="role">
-        <option value="admin">Admin</option>
-        <option value="user">User</option>
+
+        <input type="radio" name="role" value="admin">Admin
+        <input type="radio" name="role" value="user">User
+
     </select>
 
     <input type="submit" value="Register">
-</form>
-<!-- Login Form -->
-<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email">
-
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password">
-
-    <input type="submit" value="Login">
 </form>
