@@ -30,12 +30,20 @@ function template_header($title) {
 	<body>
         <header>
             <div class="content-wrapper">
+            <a href="login.php">
+						<i class="fas fa-sign-in-alt"> Login</i>
+				<a href="register.php">
+						<i class="fas fa-key"> Register</i> 
+						<br>
                 <h1>Magazin Online - Proiect DAW</h1>
                 <nav>
                     <a href="index.php">Home</a>
                     <a href="index.php?page=products">Products</a>
                 </nav>
+                
+                
                 <div class="link-icons">
+                
                     <a href="index.php?page=cart">
 						<i class="fas fa-shopping-cart"></i>
 						<span>$num_items_in_cart</span>
