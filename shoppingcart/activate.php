@@ -1,4 +1,5 @@
 <?php
+require_once 'db_connect.php';
 
 $code = $_GET['code'] ?? null;
 $code = htmlspecialchars(addslashes($code));
