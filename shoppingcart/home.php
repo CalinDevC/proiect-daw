@@ -7,8 +7,6 @@ $stmt->execute();
 $recently_added_products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
-<?=template_header('Home')?>
-
 <div class="featured">
     <h2>Gadgets</h2>
     <p>Essential gadgets for everyday use</p>
@@ -31,4 +29,3 @@ $recently_added_products = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </div>
 </div>
 
-<?=template_footer()?>

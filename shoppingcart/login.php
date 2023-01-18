@@ -32,7 +32,7 @@ if(isset($_POST['email'], $_POST['password'])){
  the htmlspecialchars() function converts special characters to HTML entities,
  avoiding JavaScript code exploits-->
 
-<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+<form method="post" action="index.php?page=login">
     <label for="email">Email:</label>
     <input type="email" id="email" name="email">
 

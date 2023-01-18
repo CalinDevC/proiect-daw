@@ -30,9 +30,9 @@ function template_header($title) {
 	<body>
         <header>
             <div class="content-wrapper">
-            <a href="login.php">
+            <a href="index.php?page=login">
 						<i class="fas fa-sign-in-alt"> Login</i>
-				<a href="register.php">
+				<a href="index.php?page=register">
 						<i class="fas fa-key"> Register</i> 
 						<br>
                 <h1>Magazin Online - Proiect DAW</h1>
@@ -67,4 +67,28 @@ function template_footer() {
     </body>
 </html>
 EOT;
+}
+
+function generate_random_string($length = 10) {
+    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $charactersLength = strlen($characters);
+    $randomString = '';
+    for ($i = 0; $i < $length; $i++) {
+        $randomString .= $characters[rand(0, $charactersLength - 1)];
+    }
+    return $randomString;
+}
+
+function send_email($to, $activation_code)
+{
+    $message = <<<EOF
+<p>Acceseaza codul de mai jos pentru a activa contul:</p>
+<p>
+    <a href="{$_SERVER['self']}/index.php?page=activate&activation_code={$activation_code}">{$activation_code}</a>
+</p>
+EOF;
+    $headers = 'From: noreply@company.com';
+
+    mail($to, "Activare Cont", $message, $headers);
+
 }

@@ -8,5 +8,7 @@ require_once 'db_connect.php';
 // I used a ternary operator to instantiate the logic for this
 $page = isset($_GET['page']) && file_exists($_GET['page'] . '.php') ? $_GET['page'] : 'home';
 
+template_header('Product');
 // Include and show the requested page
 include $page . '.php';
+template_footer();

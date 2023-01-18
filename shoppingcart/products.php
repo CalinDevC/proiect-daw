@@ -15,7 +15,6 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 $total_products = $conn->query('SELECT * FROM products')->rowCount();
 ?>
 
-<?=template_header('Products')?>
 
 <div class="products content-wrapper">
     <h1>Products</h1>
@@ -44,4 +43,3 @@ $total_products = $conn->query('SELECT * FROM products')->rowCount();
     </div>
 </div>
 
-<?=template_footer()?>

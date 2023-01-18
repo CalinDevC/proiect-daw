@@ -17,7 +17,6 @@ if (isset($_GET['id'])) {
 }
 ?>
 
-<?=template_header('Product')?>
 
 <div class="product content-wrapper">
     <img src="imgs/<?=$product['img']?>" width="500" height="500" alt="<?=$product['name']?>">
@@ -39,5 +38,3 @@ if (isset($_GET['id'])) {
         </div>
     </div>
 </div>
-
-<?=template_footer()?>

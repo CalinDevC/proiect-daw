@@ -82,10 +82,6 @@ if ($products_in_cart) {
 }
 ?>
 
-
-
-<?=template_header('Cart')?>
-
 <div class="cart content-wrapper">
     <h1>Shopping Cart</h1>
     <form action="index.php?page=cart" method="post">
@@ -136,8 +132,6 @@ if ($products_in_cart) {
         </div>
     </form>
 </div>
-
-<?=template_footer()?>
 
 
 
