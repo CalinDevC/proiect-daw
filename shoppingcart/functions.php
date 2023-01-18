@@ -79,16 +79,18 @@ function generate_random_string($length = 10) {
     return $randomString;
 }
 
-function send_email($to, $activation_code)
+function send_email($to, $code)
 {
+    $server_url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://" . $_SERVER['HTTP_HOST'];
     $message = <<<EOF
 <p>Acceseaza codul de mai jos pentru a activa contul:</p>
 <p>
-    <a href="{$_SERVER['self']}/index.php?page=activate&activation_code={$activation_code}">{$activation_code}</a>
+    <a href="{$server_url}/activate.php?code={$code}">{$code}</a>
 </p>
 EOF;
     $headers = 'From: noreply@company.com';
-
+    $headers .= 'MIME-Version: 1.0' . "\r\n";
+    $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
     mail($to, "Activare Cont", $message, $headers);
 
 }
