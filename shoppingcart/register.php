@@ -2,9 +2,6 @@
 
 require_once 'db_connect.php';
 
-
-
-
 if(isset($_SESSION['user_id'])){
     //user already logged in
     header("Location: index.php");
@@ -19,7 +16,15 @@ if(!empty($_POST['username']) && !empty($_POST['email']) && !empty($_POST['passw
     $role = 'user';
     $code = generate_random_string();
 
-    send_email($email, $code);
+    $server_url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://" . $_SERVER['HTTP_HOST'];
+
+    $message = <<<EOF
+<p>Acceseaza codul de mai jos pentru a activa contul:</p>
+<p>
+    <a href="{$server_url}/activate.php?code={$code}">{$code}</a>
+</p>
+EOF;
+    send_email($email, $message);
 
     $sql = "INSERT INTO users (username, email, password, role, code) VALUES (?,?,?,?,?)";
     $stmt = $conn->prepare($sql);
@@ -27,9 +32,6 @@ if(!empty($_POST['username']) && !empty($_POST['email']) && !empty($_POST['passw
     header("Location: index.php");
 }
 ?>
-
-
-
 
 <form method="post" action="index.php?page=register">
     <label for="username">Username:</label>

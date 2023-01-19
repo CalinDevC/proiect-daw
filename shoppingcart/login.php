@@ -12,8 +12,7 @@ if(isset($_POST['email'], $_POST['password'])){
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-
-    $stmt = $conn->prepare("SELECT * FROM users WHERE email = ?");
+    $stmt = $conn->prepare("SELECT * FROM users WHERE email = ? AND active = 1");
     $stmt->execute([$email]);
     $user = $stmt->fetch();
 
@@ -21,6 +20,7 @@ if(isset($_POST['email'], $_POST['password'])){
         // Login success
         $_SESSION['user_id'] = $user['id'];
         $_SESSION['user_role'] = $user['role'];
+        $_SESSION['username'] = $user['username'];
         header("Location: index.php");
     } else {
         // Login failed
