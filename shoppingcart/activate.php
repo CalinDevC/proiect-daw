@@ -11,7 +11,7 @@ if (!empty($code)) {
     $stmt->execute([':code' => $code]);
     $user = $stmt->fetch(PDO::FETCH_ASSOC);
     if ($user) {
-        $updateSql = "UPDATE users SET active = 1 WHERE id = :id AND code = :code";
+        $updateSql = "UPDATE users SET active = 1, code = null WHERE id = :id AND code = :code";
         $update = $conn->prepare($updateSql);
         $update->execute([':id' => $user['id'], ':code' => $code]);
 
