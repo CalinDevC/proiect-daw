@@ -24,6 +24,7 @@ if(isset($_POST['email'], $_POST['password'])){
         header("Location: index.php");
     } else {
         // Login failed
+        echo "Invalid username or password!";
     }
 }
 ?>
@@ -31,6 +32,10 @@ if(isset($_POST['email'], $_POST['password'])){
 <!-- Login Form. as i read on the course material,
  the htmlspecialchars() function converts special characters to HTML entities,
  avoiding JavaScript code exploits-->
+
+<link href="css/forms.css" rel="stylesheet" type="text/css">
+
+<div class="container">
 
 <form method="post" action="index.php?page=login">
     <label for="email">Email:</label>
@@ -42,3 +47,4 @@ if(isset($_POST['email'], $_POST['password'])){
     <input type="submit" value="Login">
 </form>
 
+</div>

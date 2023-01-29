@@ -32,6 +32,9 @@ EOF;
     header("Location: index.php");
 }
 ?>
+<link href="css/forms.css" rel="stylesheet" type="text/css">
+
+<div class="container">
 
 <form method="post" action="index.php?page=register">
     <label for="username">Username:</label>
@@ -46,3 +49,4 @@ EOF;
 
     <input type="submit" value="Register">
 </form>
+</div>
