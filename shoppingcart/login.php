@@ -1,10 +1,14 @@
 <?php
 
-require_once 'db_connect.php';
+include 'db_connect.php';
 
 if(isset($_SESSION['user_id'])){
-    //user already logged in
-    header("Location: index.php");
+    // Check the user's role
+    if ($_SESSION['user_role'] === 'admin') {
+        header("Location: admin.php");
+    } else {
+        header("Location: index.php");
+    }
 }
 
 if(isset($_POST['email'], $_POST['password'])){
@@ -21,12 +25,19 @@ if(isset($_POST['email'], $_POST['password'])){
         $_SESSION['user_id'] = $user['id'];
         $_SESSION['user_role'] = $user['role'];
         $_SESSION['username'] = $user['username'];
-        header("Location: index.php");
+
+        // Check the user's role
+        if ($_SESSION['user_role'] === 'admin') {
+            header("Location: index.php?page=admin");
+        } else {
+            header("Location: index.php");
+        }
     } else {
         // Login failed
         echo "Invalid username or password!";
     }
 }
+
 ?>
 
 <!-- Login Form. as i read on the course material,
