@@ -1,17 +1,4 @@
 <?php
-/*function pdo_connect_mysql() {
-    //  MySQL details
-    $DATABASE_HOST = 'localhost';
-    $DATABASE_USER = 'root';
-    $DATABASE_PASS = '';
-    $DATABASE_NAME = 'magazin_daw';
-    try {
-        return new PDO('mysql:host=' . $DATABASE_HOST . ';dbname=' . $DATABASE_NAME . ';charset=utf8', $DATABASE_USER, $DATABASE_PASS);
-    } catch (PDOException $exception) {
-        // If there is an error with the connection, stop the script and display the error.
-        exit($exception->getMessage());
-    }
-}*/
 
 // Template header
 function template_header($title) {
@@ -20,14 +7,21 @@ function template_header($title) {
     $num_items_in_cart = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
 
     if (!empty($_SESSION['user_id'])) {
-        $user_links = 'Salut ' . $_SESSION['username'] . ' | <a href="logout.php">Logout</a>';
+        $user_links = "<a href='logout.php'>
+        <i class='fas fa-sign-out-alt'></i> Logout
+    </a>";
+        if ($_SESSION['user_role'] === 'admin') {
+            $user_links .= "<a href='index.php?page=admin'>
+            <i class='fas fa-user-cog'></i> Admin Panel
+        </a>";
+        }
     } else {
-        $user_links = "<a href=\"index.php?page=login\">
-				<i class=\"fas fa-sign-in-alt\"></i>Login
-			</a>
-		    <a href=\"index.php?page=register\">
-				<i class=\"fas fa-key\"></i>Register
-			</a>";
+        $user_links = "<a href='index.php?page=login'>
+        <i class='fas fa-sign-in-alt'></i> Login
+    </a>
+    <a href='index.php?page=register'>
+        <i class='fas fa-key'></i> Register
+    </a>";
     }
 
 
@@ -52,6 +46,8 @@ function template_header($title) {
                     <a href="index.php">Home</a>
                     <a href="index.php?page=products">Products</a>
                     <a href="index.php?page=contact">Contact</a>
+                   
+                   
                 </nav>
                 
                 
@@ -67,7 +63,9 @@ function template_header($title) {
         <main>
 EOT;
 }
+
 // Template footer
+
 function template_footer() {
     $year = date('Y');
     echo <<<EOT
@@ -94,7 +92,7 @@ function generate_random_string($length = 10) {
 
 function send_email($to, $message)
 {
-    $headers = 'From: noreply@company.com';
+    $headers = 'From: noreply@pompini.ro';
     $headers .= 'MIME-Version: 1.0' . "\r\n";
     $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
     mail($to, "Activare Cont", $message, $headers);
