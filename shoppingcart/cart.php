@@ -39,16 +39,14 @@ if (isset($_GET['remove']) && is_numeric($_GET['remove']) && isset($_SESSION['ca
 // Update product quantities in cart if the user clicks the "Update" button on the shopping cart page
 if (isset($_POST['update']) && isset($_SESSION['cart'])) {
     // Loop through the post data so we can update the quantities for every product in cart
-    foreach ($_POST as $k => $v) {
-        if (strpos($k, 'quantity') !== false && is_numeric($v)) {
-            $id = str_replace('quantity-', '', $k);
-            $quantity = (int)$v;
+    foreach ($_POST['quantity'] as $product_id => $quantity) {
+
             // Always do checks and validation
-            if (is_numeric($id) && isset($_SESSION['cart'][$id]) && $quantity > 0) {
+            if (is_numeric($product_id) && isset($_SESSION['cart'][$product_id]) && $quantity > 0) {
                 // Update new quantity
-                $_SESSION['cart'][$id] = $quantity;
+                $_SESSION['cart'][$product_id] = $quantity;
             }
-        }
+
     }
     // Prevent form resubmission...
     header('location: index.php?page=cart');
@@ -57,8 +55,25 @@ if (isset($_POST['update']) && isset($_SESSION['cart'])) {
 
 // Send the user to the place order page if they click the Place Order button, also the cart should not be empty
 if (isset($_POST['placeorder']) && isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
-    header('Location: index.php?page=placeorder');
+
+    if(!empty($_POST ['quantity'])) {
+
+        $stmt = $conn->prepare('INSERT INTO orders (user_id, status) values (?, "plasata")');
+        $stmt->execute([$_SESSION['user_id']]);
+
+        //var order id o trimit mai departe
+
+        $order_id = $conn->lastInsertId();
+
+        foreach ($_POST['quantity'] as $product_id => $quantity) {
+            $stmt = $conn->prepare('INSERT INTO order_items (order_id, product_id, quantity) VALUES (?, ?, ?)');
+            $stmt->execute([$order_id, $product_id, $quantity]);
+        }
+        header('Location: index.php?page=invoice&order_id='.$order_id);
+
+    }
     exit;
+
 }
 
 // Check the session variable for products in cart
@@ -114,7 +129,7 @@ if ($products_in_cart) {
                         </td>
                         <td class="price">&dollar;<?=$product['price']?></td>
                         <td class="quantity">
-                            <input type="number" name="quantity-<?=$product['id']?>" value="<?=$products_in_cart[$product['id']]?>" min="1" max="<?=$product['quantity']?>" placeholder="Quantity" required>
+                            <input type="number" name="quantity[<?=$product['id']?>]" value="<?=$products_in_cart[$product['id']]?>" min="1" max="10" placeholder="Quantity" required>
                         </td>
                         <td class="price">&dollar;<?=$product['price'] * $products_in_cart[$product['id']]?></td>
                     </tr>
